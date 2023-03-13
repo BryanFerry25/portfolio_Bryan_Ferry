@@ -17,3 +17,6 @@ app.use(plugin, defaultConfig)
 app.use(VueKinesis)
 
 app.mount('#app')
+
+
+

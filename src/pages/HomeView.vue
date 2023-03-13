@@ -1,10 +1,16 @@
 <script setup>
-  import listProjet from '@/components/listProjets.vue'
-  
+
+  import listProjet from '@/components/listProjets.vue';
+
 </script>
 
 <template>
   <main id="curseur">
+    
+    <div>
+   
+  </div>
+
     <div class="text-4xl sm:text-8xl flex flex-col text-center background-image bg-no-repeat espace sm:espace2">
       <h1 class="font-portico-inline uppercase ">Bryan Ferry</h1>
       <h1 class="font-portico-outline ml-8 -mt-14 uppercase">BRYAN FERRY</h1>
@@ -16,10 +22,15 @@
 
 
     </div>  
+
+
+    
+
+
     <div class="font-mrs-saint-delafield text-white text-sm text-center sm:text-6xl sm:text-left sm:flex -mt-48">
       <div class="sm:ml-10">
-        <h2 class=" text-5xl ml-10 ">Rendre ses idées concrètes en créant un </h2>
-        <h2 class=" text-5xl ml-10">univers unique...</h2>
+        <p>{{ texteAffiche }}</p>
+       
       </div>
       <img class="sm:w-1/2" src="@/assets/bubble.webp" alt="bubble">
     </div>
@@ -132,3 +143,35 @@
 
 
 </style>
+
+<script>
+  export default {
+  data() {
+    return {
+      texte: "Rendre ses idées concrètes en créant un univers unique... ",
+      
+      texteAffiche: "",
+      index: 0,
+      tempsEcriture: 70 
+    };
+  },
+  mounted() {
+    this.ecrireTexte();
+  },
+  methods: {
+    ecrireTexte() {
+      if (this.index < this.texte.length) {
+        this.texteAffiche += this.texte.charAt(this.index);
+        this.index++;
+        setTimeout(this.ecrireTexte, this.tempsEcriture);
+      }
+    }
+  }
+  
+};
+
+
+
+
+
+</script>

@@ -13,7 +13,7 @@ const menuOuvert = ref(false)
   <header class=" mb-10">
     <nav class="flex justify-between px-6 font-unbounded text-xl">
       <RouterLink to="/">
-        <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="200"/>
+        <img alt="Vue logo" class="logo" src="@/assets/logo_bryan_ferry.svg" width="200"/>
       </RouterLink>
       <div class="hidden sm:flex items-center gap-10">
         <RouterLink class="nav__link" to="/projets">Projets</RouterLink>

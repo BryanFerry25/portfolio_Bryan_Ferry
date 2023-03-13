@@ -31,13 +31,7 @@ console.log("test", user)
       <div class=" p-14">
       <FormKit name="password" label="Mot de passe" type="password" />
     </div>
-      <formKit
-        label="  nouveau compte"
-        name="nvlUtilisateur"
-        type="checkbox"
-        v-model="nvlUtilisateur"
-        wrapper-class="w-full flex text-xl "
-      />
+
     </FormKit>
 
   </div>

@@ -245,7 +245,7 @@ a#button-1:hover img {
   
 }
 .background-image {
-  background-image: url('@/assets/ez.gif');
+  background-image: url('@/assets/anim.gif');
   background-size: cover;
   background-position: center;
   width: 1/3;
@@ -254,7 +254,7 @@ a#button-1:hover img {
 
 
 .background-image2 {
-  background-image: url('@/assets/new_bg.gif');
+  background-image: url('@/assets/test.gif');
   background-size: cover;
   background-position: center;
   width: 100%;

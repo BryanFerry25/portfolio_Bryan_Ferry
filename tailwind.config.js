@@ -15,7 +15,7 @@ module.exports = {
         "syncopate": 'Syncopate',
         "unbounded": 'Unbounded',
         "portico-outline": "Outline",
-        "portico-inline": "Inline"
+        "portico-inline": "porticoregular"
       },
     },
   },

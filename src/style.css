@@ -8,8 +8,10 @@
 }
 
 @font-face {
-    font-family: 'Inline';
-    src: url('src/assets/portico_regular_400-webfont.woff');
-}
+    font-family: 'porticoregular';
+    src: url('src/assets/portico_regular_400-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 

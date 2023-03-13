@@ -118,8 +118,8 @@
 
 
 
-          <div class="w-max m-auto bg-gradient-to-t from-cyan-500 to-purple-500 rounded-3xl p-1">
-            <div class="bg-black-light h-full w-full rounded-3xl px-10 py-5">
+          <div class="w-max m-auto bg-gradient-to-t from-cyan-500 to-purple-500 rounded-3xl p-1 mb-40">
+            <div class="bg-black-light h-full w-full rounded-3xl px-10 py-5 ">
 
                 
 

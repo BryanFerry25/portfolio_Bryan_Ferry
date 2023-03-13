@@ -14,10 +14,14 @@
         
         <div class=" absolute w-36 h-36 sm:w-96 sm:h-96 block bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-30"></div>
       </div>
+      <kinesis-container>
+        <kinesis-element :strength="30">
       <h1 class="font-portico-inline uppercase animate__animated animate__flipInX ">Bryan Ferry</h1>
-      
+    </kinesis-element>
+    <kinesis-element :strength="20">
       <h1 class="font-portico-outline ml-8 -mt-14 uppercase animate__animated animate__flipInX ">BRYAN FERRY</h1>
-
+    </kinesis-element>
+    </kinesis-container>
 
       <div class=" flex text-center justify-center mt-7 mb-48">
       <div class="font-mrs-saint-delafield text-white text-2xl text-center sm:text-6xl sm:text-left sm:flex items-center ">
@@ -41,8 +45,8 @@
         <h2 class="font-mrs-saint-delafield text-3xl ml-28 sm:ml-40 sm:text-7xl text-center">projets</h2>
       </div>
 
-      
-      <div class="py-5 pb-96 background-image2 bg-no-repeat "></div>
+
+      <div class="py-5 pb-96 background-image2 bg-no-repeat"></div>
 
 
 
@@ -153,11 +157,17 @@
     </div>
     </div>
     </div>
-  
+    
+
+
+
   </main>
 </template>
 
 <style>
+
+
+
 
 @import 'animate.css';
 
@@ -192,6 +202,7 @@ a#button-1:hover img {
 
 }
 
+
 .background-image2 {
   background-image: url('@/assets/new_bg.gif');
   background-size: cover;
@@ -200,6 +211,11 @@ a#button-1:hover img {
   
   
 
+}
+@media only screen and (max-width: 768px) {
+.background-image2 {
+background-size: 90%;
+}
 }
 
 .background-image-contact {

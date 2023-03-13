@@ -5,18 +5,23 @@
 
 <template>
   <main id="curseur">
-    <div class="text-4xl sm:text-8xl flex flex-col text-center">
+    <div class="text-4xl sm:text-8xl flex flex-col text-center background-image bg-no-repeat espace sm:espace2">
       <h1 class="font-portico-inline uppercase ">Bryan Ferry</h1>
       <h1 class="font-portico-outline ml-8 -mt-14 uppercase">BRYAN FERRY</h1>
       <div class="w-36 h-36 sm:w-96 sm:h-96 block bg-gradient-to-t -ml-16 from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-60"></div>
-      <img class=" -mt-72 sm:-mt-96" src="@/assets/3danim.gif" alt="3d anim">
+      <div class=" "></div>
+
+
+     <!-- <img class=" -mt-72 sm:-mt-96" src="@/assets/3danim.gif" alt="3d anim">-->
+
+
     </div>  
-    <div class="font-mrs-saint-delafield text-white text-sm text-center sm:text-6xl sm:text-left sm:flex">
+    <div class="font-mrs-saint-delafield text-white text-sm text-center sm:text-6xl sm:text-left sm:flex -mt-48">
       <div class="sm:ml-10">
-        <h2 class=" text-5xl ml-10">Rendre ses idées concrètes en créant un </h2>
+        <h2 class=" text-5xl ml-10 ">Rendre ses idées concrètes en créant un </h2>
         <h2 class=" text-5xl ml-10">univers unique...</h2>
       </div>
-      <img class="sm:w-1/2 " src="@/assets/bubble.webp" alt="bubble">
+      <img class="sm:w-1/2" src="@/assets/bubble.webp" alt="bubble">
     </div>
     <div class="text-center sm:text-left">
       <div class="sm:ml-20">
@@ -48,7 +53,7 @@
 
         <KinesisContainer>
             <KinesisElement
-            :strength="10" 
+            :strength="20" 
             type="depth">
         <img class="bg-gray-700 rounded-3xl ml-5  mb-36" src="@/assets/bryan.webp" alt="">
         
@@ -58,8 +63,13 @@
         <div class="text-xs mx-10 sm:mr-10 sm:text-2xl">
           <p class="font-unbounded mb-10">Je m'appelle Bryan Ferry et je suis actuellement un étudiant en <strong class="text-purple-500">2ème année de BUT Métier du Multimédia et de l'Internet</strong> à Montbéliard</p>
           <p class="font-unbounded mb-10">Je suis spécialisé dans le domaine du design et plus précisément sur l'UI Design, la création d'affiche, de logo et de tout ce qui est lié à la <strong class="text-cyan-400">création graphique d'une marque</strong></p>
+          
+          
           <div class="w-max m-auto bg-gradient-to-t from-cyan-500 to-purple-500 rounded-2xl p-1">
             <div class="bg-black-light h-full w-full rounded-xl px-4 py-1">
+
+                
+
               <a href="src/assets/cv.pdf" class="font-unbounded font-medium" download="cv_Bryan_Ferry.pdf"> 
                 <span>Télécharger mon CV</span>
               </a>
@@ -94,7 +104,31 @@
 </template>
 
 <style>
+
+@import 'animate.css';
 #curseur{
   cursor: url('/src/assets/curseur.svg')  54 57, auto;
+
 }
+
+.background-image {
+  background-image: url('@/assets/3danim.gif');
+  background-size: cover;
+  background-position: center;
+  
+  
+}
+
+.espace{
+  padding-bottom: 500px;
+}
+
+.espace2{
+  padding-bottom: 200px;
+}
+
+
+
+
+
 </style>

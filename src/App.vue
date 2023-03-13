@@ -13,7 +13,7 @@ const menuOuvert = ref(false)
   <header class=" mb-10">
     <nav class="flex justify-between px-6 font-unbounded text-xl">
       <RouterLink to="/">
-        <img alt="Vue logo" class="logo w-1/3 sm:w-2/3 " src="@/assets/logo_bryan_ferry.svg" />
+        <img alt="Vue logo" class="logo w-1/3 sm:w-2/3 animate__animated animate__rollIn " src="@/assets/logo_bryan_ferry.svg" />
       </RouterLink>
       <div class="hidden sm:flex items-center gap-10">
         <RouterLink class="nav__link" to="/projets">Projets</RouterLink>
@@ -29,8 +29,8 @@ const menuOuvert = ref(false)
             </ul>
         </div>
         <div class=" hidden sm:flex items-center ml-5 mr-5 gap-6">
-        <a class=" scale-75 hover-image" href="https://www.instagram.com/bryanf.pro/"><img src="@/assets/Instagram_white.svg" alt="Logo instagram"></a>
-        <a  class=" scale-75 hover-image" href="https://www.linkedin.com/in/bryan-ferry-523546216/"><img src="@/assets/LinkedIn_white.svg" alt="Logo LinkedIn"></a>
+        <a class=" scale-100 hover-image shadow_pink" href="https://www.instagram.com/bryanf.pro/" target="_blank"><img src="@/assets/Instagram_white.svg" alt="Logo instagram"></a>
+        <a  class=" scale-100 hover-image shadow_blue" href="https://www.linkedin.com/in/bryan-ferry-523546216/" target="_blank"><img src="@/assets/LinkedIn_white.svg" alt="Logo LinkedIn"></a>
       </div>
       </div>
       <button class="relative sm:hidden"
@@ -111,14 +111,14 @@ const menuOuvert = ref(false)
 }
 
 .nav__link:hover {
-    color: #9022CF;
-    text-shadow: 0px 0px 2px #9022CF;
+    color: #6CB6DE;
+    text-shadow: 0px 0px 2px #6CB6DE;
 }
 
 .nav__link:hover::after {
     right: 0;
     height: 2px;
-    background: #9022CF;
+    background: #6CB6DE;
 }
 
 .hover-image {
@@ -126,6 +126,15 @@ const menuOuvert = ref(false)
 }
 
 .hover-image:hover {
-  transform: scale(1);
+  transform: scale(1.1);
 }
+
+.shadow_pink{
+  filter: drop-shadow(0px 0px 5px #9022CF);
+}
+
+.shadow_blue{
+  filter: drop-shadow(0px 0px 5px #2FAAF0);
+}
+
 </style>

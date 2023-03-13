@@ -17,8 +17,8 @@ console.log("test", user)
 </script>
 
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="about text-center justify-center font-unbounded text-xl -mt-96 ">
+   
     <button v-if="user" @pointerdown="supabase.auth.signOut()">
         Se déconnecter ({{user.email}})
     </button>
@@ -28,9 +28,11 @@ console.log("test", user)
     :submit-label="nvlUtilisateur ? 'S\'inscrire' : 'Se connecter'"
       @submit="connexion">
       <FormKit name="email" label="mail" type="email" />
+      <div class=" p-14">
       <FormKit name="password" label="Mot de passe" type="password" />
+    </div>
       <formKit
-        label="Nouvel utilisateur ?"
+        label="  nouveau compte"
         name="nvlUtilisateur"
         type="checkbox"
         v-model="nvlUtilisateur"

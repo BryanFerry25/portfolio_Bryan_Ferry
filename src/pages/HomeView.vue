@@ -36,10 +36,17 @@
         <h2 class="font-mrs-saint-delafield text-3xl ml-28 sm:ml-40 sm:text-7xl text-center">projets</h2>
       </div>
       <div class=" flex text-right justify-end">
+        
       <div class=" w-36 h-36 sm:w-96 sm:h-96 block bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-60"></div>
     </div>
+    <div class="py-5 pb-96 background-image2 bg-no-repeat ">
       <div>
-        <div class="py-5 bg-[url('src/assets/new_bg.gif')] bg-no-repeat">
+
+
+        
+
+
+
           <listProjet :max="9" />
         </div>
       </div>
@@ -162,6 +169,15 @@ a#button-1:hover img {
   background-size: cover;
   background-position: center;
   width: 1/3;
+
+}
+
+.background-image2 {
+  background-image: url('@/assets/animation_fond_projets.gif');
+  background-size: cover;
+  background-position: center;
+  
+  
 
 }
 

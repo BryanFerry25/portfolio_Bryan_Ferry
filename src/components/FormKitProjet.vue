@@ -33,7 +33,7 @@ const { data: listeLogiciel, error } = await supabase
 if (error) {console.log("n'a pas pu charger la table Logiciels :", error)}
 else {  console.log(listeLogiciel)};
 const optionsLogiciel = listeLogiciel?.map((logiciel) => ({
-  value: logiciel.Code_Logiciel,
+  value: logiciel.logo,
   label: logiciel.libelle,
 }));
 

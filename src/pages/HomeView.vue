@@ -7,14 +7,14 @@
 <template>
   <main id="curseur">
     
-    <div class="patterns font-unbounded -mt-20">
+    <div class="patterns font-unbounded -mt-10 sm:-mt-20 text-center">
   <svg class=" svg_anim" width="100%" height="100%">
- <text class="text_svg" x="45%" y="50%"  text-anchor="middle"  >
+ <text class="text_svg" x="45%" y="50%"  text-anchor="middle"   >
    Bryan 
  </text>
  </svg>
 </div>
-<div class="patterns font-unbounded -mt-48">
+<div class="patterns font-unbounded mobile_ajust -mt-60 sm:-mt-48 text-center">
   <svg class=" svg_anim" width="100%" height="100%">
  <text class="text_svg2" x="52%" y="60%"  text-anchor="middle"  >
    Ferry
@@ -204,6 +204,7 @@
   animation: textAnimate 7s infinite alternate;
   
 }
+
 .text_svg2 {
   font-family: "Metal Mania";
   letter-spacing: 10px;
@@ -215,6 +216,20 @@
   animation: textAnimate 7s infinite alternate;
   
 }
+
+@media only screen and (max-width: 768px) {
+.text_svg {
+  font-size: 120px;
+  
+}
+.text_svg2 {
+  font-size: 100px;
+}
+
+
+}
+
+
 @keyframes textAnimate {
   0% {
     stroke-dasharray: 0 50%;

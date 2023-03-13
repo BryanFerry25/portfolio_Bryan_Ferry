@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Outline';
+    src: url('src/assets/porticoOutline.otf');
+}
+
+@font-face {
+    font-family: 'Inline';
+    src: url('src/assets/porticoRegular.otf');
+}

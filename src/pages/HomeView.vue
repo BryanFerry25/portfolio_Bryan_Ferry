@@ -1,7 +1,7 @@
 <script setup>
 
   import listProjet from '@/components/listProjets.vue';
-  import anime from 'animejs';
+
 </script>
 
 <template>
@@ -9,14 +9,14 @@
     
     <div class="patterns font-unbounded -mt-10 sm:-mt-20 text-center">
   <svg class=" svg_anim" width="100%" height="100%">
- <text class="text_svg" x="45%" y="50%"  text-anchor="middle"   >
+ <text class="text_svg" x="48%" y="50%"  text-anchor="middle"   >
    Bryan 
  </text>
  </svg>
 </div>
-<div class="patterns font-unbounded mobile_ajust -mt-60 sm:-mt-48 text-center">
+<div class="patterns font-unbounded mobile_ajust -mt-60 sm:-mt-48 text-center -mb-28">
   <svg class=" svg_anim" width="100%" height="100%">
- <text class="text_svg2" x="52%" y="60%"  text-anchor="middle"  >
+ <text class="text_svg2" x="54%" y="60%"  text-anchor="middle"  >
    Ferry
  </text>
  </svg>
@@ -101,7 +101,7 @@
             :strength="20" 
             type="depth">
 <div class=" flex sm:text-left text-center justify-center">
-        <img class="bg-gray-700 rounded-3xl ml-0 sm:ml-14 sm:mb-36 mb-10  sm:w-96 w-1/2 mt-20 sm:mt-1   " src="@/assets/bryan.webp" alt="">
+        <img class="bg-gray-700 rounded-3xl ml-0 sm:ml-14 sm:mb-36 mb-10  sm:w-96 w-1/2 mt-20 sm:-mt-52   " src="@/assets/bryan.webp" alt="">
       </div>
         
         </KinesisElement>
@@ -109,8 +109,9 @@
       </div>
         <div class="text-xs mx-10 sm:mr-10 sm:text-2xl">
           <div class=" p-2 sm:p-32">
-          <p class="font-unbounded mb-10">Je m'appelle Bryan Ferry et je suis actuellement un étudiant en <strong class="text-purple-500">2ème année de BUT Métier du Multimédia et de l'Internet</strong> à Montbéliard</p>
-          <p class="font-unbounded mb-10">Je suis spécialisé dans le domaine du design et plus précisément sur l'UI Design, la création d'affiche, de logo et de tout ce qui est lié à la <strong class="text-cyan-400">création graphique d'une marque</strong></p>
+          <p class="font-unbounded mb-10">Je m'appelle Bryan Ferry et je suis actuellement un étudiant en <strong class="text-purple-500">2ème année de BUT Métier du Multimédia et de l'Internet avec la spécialité design</strong> à Montbéliard.</p>
+          <p class="font-unbounded mb-10">Je suis spécialisé dans le domaine du design et plus précisément sur l'UI Design, la création d'affiche, de logo et de tout ce qui est lié à la <strong class="text-cyan-400">création graphique d'une marque. </strong> </p>
+          <p class="font-unbounded mb-10"> A côté du design, j'ai appris à créer des sites internet, à gérer des réseaux sociaux pour une entreprise par exemple mais également à concevoir de a à z une stratégie marketing afin qu'une entreprise puisse avoir les ressources numériques nécessaires afin de débuter.</p>
         </div>
 
 

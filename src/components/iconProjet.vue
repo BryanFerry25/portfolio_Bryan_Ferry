@@ -24,7 +24,7 @@ defineProps({
 <style>
 
 .shadow_white{
-  filter: drop-shadow(0px 0px 5px #ffffff);
+  filter: drop-shadow( #000000);
 }
 
 </style>

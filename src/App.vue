@@ -84,9 +84,7 @@ const menuOuvert = ref(false)
 
 <style>
 
-#curseur{
-  cursor: url('/src/assets/curseur.svg')  54 57, auto;
-}
+
 
 .nav__link {
     position: relative;

@@ -64,15 +64,18 @@
             <KinesisElement
             :strength="20" 
             type="depth">
-        <img class="bg-gray-700 rounded-3xl ml-5  mb-36" src="@/assets/bryan.webp" alt="">
+<div class=" flex sm:text-left text-center justify-center">
+        <img class="bg-gray-700 rounded-3xl ml-0 sm:ml-14 sm:mb-36 mb-10  sm:w-96 w-1/2 mt-20 sm:mt-1   " src="@/assets/bryan.webp" alt="">
+      </div>
         
         </KinesisElement>
         </KinesisContainer>
       </div>
         <div class="text-xs mx-10 sm:mr-10 sm:text-2xl">
+          <div class=" p-2 sm:p-32">
           <p class="font-unbounded mb-10">Je m'appelle Bryan Ferry et je suis actuellement un étudiant en <strong class="text-purple-500">2ème année de BUT Métier du Multimédia et de l'Internet</strong> à Montbéliard</p>
           <p class="font-unbounded mb-10">Je suis spécialisé dans le domaine du design et plus précisément sur l'UI Design, la création d'affiche, de logo et de tout ce qui est lié à la <strong class="text-cyan-400">création graphique d'une marque</strong></p>
-          
+        </div>
           
           <div class="w-max m-auto bg-gradient-to-t from-cyan-500 to-purple-500 rounded-3xl p-1">
             <div class="bg-black-light h-full w-full rounded-3xl px-10 py-5">
@@ -88,9 +91,9 @@
       </div>
     </div>
     <div>
-      <div id="contact" class="text-center sm:ml-20 mt-12">
+      <div id="contact" class="text-center  mt-12">
         <h2 class="font-syncopate text-2xl sm:text-5xl">Contact</h2>
-        <div class="background-image-contact bg-no-repeat sm:pb-32 -ml-40">
+        <div class="background-image-contact bg-no-repeat sm:pb-32 ">
           <div>
         <h2 class="font-mrs-saint-delafield text-3xl sm:text-7xl ml-32 sm:ml-48">Contact</h2>
       </div>
@@ -109,12 +112,12 @@
 
      
       <button class="glow-on-hover" type="button">
-        <a id="button-1" class="button" href="#">Envoyer un mail<img id="arrow-hover" src="@/assets/paper_Plane_new.svg"/></a>
+        <a id="button-1" class="button font-unbounded font-bold" href="mailto:ferrybryan25@gmail.com" target="_blank">Envoyer un mail<img id="arrow-hover" src="@/assets/paper_Plane_new.svg"/></a>
         
         </button>
 
 
-      <div>
+ <!--   <div>
         <div class="w-max m-auto bg-purple-500 rounded-full p-1">
           <div v-wave="{ color: '#9D32EA' }" class="bg-black-light h-full w-full rounded-full px-10 py-1">
             <a class="flex items-center font-unbounded font-bold" href="mailto:ferrybryan25@gmail.com" target="_blank"> 
@@ -123,7 +126,8 @@
             </a>
           </div>    
         </div>
-      </div>  
+      </div>
+      -->    
     </div>
     </div>
     </div>
@@ -138,19 +142,20 @@
   width: 40px;
   height: 40px;
   position: absolute;
-  transform: translateX(60px);
+  transform: translateX(10px);
   opacity: 0;
-  -webkit-transition: all .25s cubic-bezier(.14, .59, 1, 1.01);
-  transition: all .15s cubic-bezier(.14, .59, 1, 1.01);
+  -webkit-transition: all .50s cubic-bezier(.14, .59, 1, 1.01);
+  transition: all .25s cubic-bezier(.14, .59, 1, 1.01);
   margin: 0;
   padding: 0 5px;
 }
 
 a#button-1:hover img {
-  width: 40px;
+  width: 50px;
   opacity: 1;
   transform: translateX(-100px);
   transform: translateY(-30px);
+  
 }
 .background-image {
   background-image: url('@/assets/3danim.gif');
@@ -186,15 +191,15 @@ a#button-1:hover img {
 
 @keyframes scintillate {
   0% {
-    opacity: 1;
+    scale: 1;
     filter: drop-shadow(0px 0px 5px #9022CF);
   }
   50% {
-    opacity: 0.6;
+    scale: 1.05;
     filter: drop-shadow(0px 0px 5px #9022CF);
   }
   100% {
-    opacity: 1;
+    scale: 1;
     filter: drop-shadow(0px 0px 5px #9022CF);
   }
 }
@@ -208,7 +213,7 @@ a#button-1:hover img {
 
 
 .glow-on-hover {
-    width: 220px;
+    width: 300px;
     height: 50px;
     border: none;
     outline: none;

@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "black-light": "#02060C"
+        "black-light": "#02060C",
+        "black-fond":"#00070E"
       },
       "fontFamily": {
         "mrs-saint-delafield": 'Mrs Saint Delafield',

@@ -18,6 +18,7 @@ app.use(plugin, defaultConfig)
 app.use(VueKinesis)
 app.use(VWave)
 
+
 app.mount('#app')
 
 

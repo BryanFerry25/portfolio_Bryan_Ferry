@@ -17,7 +17,7 @@ async function upsertProjet(dataForm) {
     .upsert(dataForm);
   if (error) {
     console.error(
-      "Impossible de mettre à jour l'offre : ",
+      "Impossible de mettre à jour le projet : ",
       offre,
       " erreur : ",
       error
@@ -52,6 +52,7 @@ async function supprimerOffre(dataForm) {
 </script>
 
 <template>
+  <div class=" text-center flex justify-center font-unbounded">
     <FormKit
         id="form"
         type="form" 
@@ -99,19 +100,24 @@ async function supprimerOffre(dataForm) {
         <FormKit :type="imgUploadSupabase" name="photo5"/>
         <FormKit :type="imgUploadSupabase" name="photo6"/>
         <FormKit :type="imgUploadSupabase" name="photo7"/>
+        <div class=" text-center mb-14">
         <button
         type="button"
         @click="$formkit.reset('form')"
-        class="rounded-md shadow-sm focus-style p-2 bg-green-300 justify-self-end"
+        class="rounded-md shadow-sm focus-style p-3 bg-red-800 justify-self-end font-unbounded"
       >
-        Reset
+      Réinitialiser
       </button>
+    </div>
+      <div class=" text-center">
       <button
         v-if="offre"
           type="button"
           @click="supprimerOffre()"
-          class="rounded-md shadow-sm focus-style p-2 bg-red-500 justify-self-end"
+          class="rounded-md shadow-sm focus-style p-4 bg-red-500 justify-self-end hover:bg-red-900 font-unbounded"
         >
-Supprimer l'offre        </button>
+Supprimer le projet        </button>
+</div>
     </FormKit>
+  </div>
 </template>

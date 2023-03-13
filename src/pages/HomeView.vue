@@ -1,7 +1,7 @@
 <script setup>
 
   import listProjet from '@/components/listProjets.vue';
-
+  import anime from 'animejs';
 </script>
 
 <template>
@@ -10,7 +10,12 @@
 
 
     <div class="text-4xl sm:text-8xl flex flex-col text-center background-image bg-no-repeat espace sm:espace2">
+      <div class=" flex text-right justify-end">
+        
+        <div class=" absolute w-36 h-36 sm:w-96 sm:h-96 block bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-30"></div>
+      </div>
       <h1 class="font-portico-inline uppercase animate__animated animate__flipInX ">Bryan Ferry</h1>
+      
       <h1 class="font-portico-outline ml-8 -mt-14 uppercase animate__animated animate__flipInX ">BRYAN FERRY</h1>
 
 
@@ -23,7 +28,7 @@
     </div>
   </div>
 
-      <div class="w-36 h-36 sm:w-96 sm:h-96 block bg-gradient-to-t -ml-16 from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-60"></div>
+      <div class="w-36 h-36 sm:w-96 sm:h-96 block bg-gradient-to-t -ml-16 from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-30"></div>
       <div class=" "></div>
 
 
@@ -35,20 +40,26 @@
         <h2 class="font-syncopate text-2xl sm:text-5xl text-center mt-10">Projets</h2>
         <h2 class="font-mrs-saint-delafield text-3xl ml-28 sm:ml-40 sm:text-7xl text-center">projets</h2>
       </div>
+
+      
+      <div class="py-5 pb-96 background-image2 bg-no-repeat "></div>
+
+
+
       <div class=" flex text-right justify-end">
         
-      <div class=" w-36 h-36 sm:w-96 sm:h-96 block bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-60"></div>
+      <div class=" w-36 h-36 sm:w-96 sm:h-96 block bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-30"></div>
     </div>
-    <div class="py-5 pb-96 background-image2 bg-no-repeat ">
+    
       <div>
-
+      
 
         
 
 
 
           <listProjet :max="9" />
-        </div>
+        
       </div>
       <div class="w-max m-auto bg-gradient-to-t from-cyan-500 to-purple-500 text-xs sm:text-2xl rounded-3xl p-1">
         <div class="bg-black-light h-full w-full rounded-3xl px-5 py-6">
@@ -65,7 +76,7 @@
       </div>
       <div class="flex flex-col sm:flex-row items-center ">
         <div>
-          <div class="w-36 h-36 sm:w-96 sm:h-96 block bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-60 -ml-16 -mb-52"></div>
+          <div class="w-36 h-36 sm:w-96 sm:h-96 block bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-30 -ml-16 -mb-52"></div>
 
         <KinesisContainer>
             <KinesisElement
@@ -83,7 +94,11 @@
           <p class="font-unbounded mb-10">Je m'appelle Bryan Ferry et je suis actuellement un étudiant en <strong class="text-purple-500">2ème année de BUT Métier du Multimédia et de l'Internet</strong> à Montbéliard</p>
           <p class="font-unbounded mb-10">Je suis spécialisé dans le domaine du design et plus précisément sur l'UI Design, la création d'affiche, de logo et de tout ce qui est lié à la <strong class="text-cyan-400">création graphique d'une marque</strong></p>
         </div>
-          
+
+
+
+
+
           <div class="w-max m-auto bg-gradient-to-t from-cyan-500 to-purple-500 rounded-3xl p-1">
             <div class="bg-black-light h-full w-full rounded-3xl px-10 py-5">
 
@@ -145,6 +160,11 @@
 <style>
 
 @import 'animate.css';
+
+
+
+
+
 #arrow-hover {
   width: 40px;
   height: 40px;
@@ -173,9 +193,10 @@ a#button-1:hover img {
 }
 
 .background-image2 {
-  background-image: url('@/assets/animation_fond_projets.gif');
+  background-image: url('@/assets/new_bg.gif');
   background-size: cover;
   background-position: center;
+  width: 100%;
   
   
 
@@ -290,6 +311,7 @@ a#button-1:hover img {
 </style>
 
 <script>
+
   export default {
   data() {
     return {
@@ -311,12 +333,12 @@ a#button-1:hover img {
         setTimeout(this.ecrireTexte, this.tempsEcriture);
       }
     }
-  }
+  },
+  
+  
   
 };
 
 
-
-
-
 </script>
+

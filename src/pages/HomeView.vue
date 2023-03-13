@@ -60,7 +60,7 @@
       </div>
 
 
-      <div class="py-5 pb-96 background-image2 bg-no-repeat"></div>
+      <div class="py-5 background-image2 bg-no-repeat">
 
 
 
@@ -68,7 +68,7 @@
         
       <div class=" w-36 h-36 sm:w-96 sm:h-96 block bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-30"></div>
     </div>
-    
+  
       <div>
       
 
@@ -77,7 +77,7 @@
 
 
           <listProjet :max="9" />
-        
+        </div>
       </div>
       <div class="w-max m-auto bg-gradient-to-t from-cyan-500 to-purple-500 text-xs sm:text-2xl rounded-3xl p-1">
         <div class="bg-black-light h-full w-full rounded-3xl px-5 py-6">
@@ -245,7 +245,7 @@ a#button-1:hover img {
   
 }
 .background-image {
-  background-image: url('@/assets/3danim.gif');
+  background-image: url('@/assets/ez.gif');
   background-size: cover;
   background-position: center;
   width: 1/3;
@@ -258,6 +258,7 @@ a#button-1:hover img {
   background-size: cover;
   background-position: center;
   width: 100%;
+  
   
   
 

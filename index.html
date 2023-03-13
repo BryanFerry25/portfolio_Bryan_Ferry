@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -11,9 +11,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-black-light text-white">
+<body class="bg-black-light text-white" id="curseur">
   <div id="app"></div>
   <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
+
+<style>
+
+  .cursor {
+    cursor: u;
+  }
+
+  #cursor{
+  cursor: url('/src/assets/curseur.svg')  54 57, auto;
+}
+</style>

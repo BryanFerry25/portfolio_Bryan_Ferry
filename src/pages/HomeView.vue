@@ -1,26 +1,27 @@
 <script setup>
   import listProjet from '@/components/listProjets.vue'
+  
 </script>
 
 <template>
-  <main>
+  <main id="curseur">
     <div class="text-4xl sm:text-8xl flex flex-col text-center">
       <h1 class="font-portico-inline uppercase ">Bryan Ferry</h1>
-      <h1 class="font-portico-outline ml-8 -mt-6 uppercase">BRYAN FERRY</h1>
+      <h1 class="font-portico-outline ml-8 -mt-14 uppercase">BRYAN FERRY</h1>
       <div class="w-36 h-36 sm:w-96 sm:h-96 block bg-gradient-to-t -ml-16 from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-60"></div>
-      <img class="-mt-32 sm:-mt-96" src="@/assets/3danim.gif" alt="">
+      <img class=" -mt-72 sm:-mt-96" src="@/assets/3danim.gif" alt="3d anim">
     </div>  
     <div class="font-mrs-saint-delafield text-white text-sm text-center sm:text-6xl sm:text-left sm:flex">
       <div class="sm:ml-10">
-        <h2>Rendre ses idées concrètes en créant un </h2>
-        <h2>univers unique...</h2>
+        <h2 class=" text-5xl ml-10">Rendre ses idées concrètes en créant un </h2>
+        <h2 class=" text-5xl ml-10">univers unique...</h2>
       </div>
-      <img class="sm:w-1/2" src="@/assets/bubble.webp" alt="">
+      <img class="sm:w-1/2 " src="@/assets/bubble.webp" alt="bubble">
     </div>
     <div class="text-center sm:text-left">
       <div class="sm:ml-20">
-        <h2 class="font-syncopate text-2xl sm:text-5xl">Projets</h2>
-        <h2 class="font-mrs-saint-delafield text-3xl ml-28 sm:ml-40 sm:text-7xl">projets</h2>
+        <h2 class="font-syncopate text-2xl sm:text-5xl text-center mt-10">Projets</h2>
+        <h2 class="font-mrs-saint-delafield text-3xl ml-28 sm:ml-40 sm:text-7xl text-center">projets</h2>
       </div>
       <div class="w-36 h-36 sm:w-96 sm:h-96 block bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-60"></div>
       <div>
@@ -38,18 +39,18 @@
     </div>
     <div>
       <div id="about" class="text-center sm:text-left sm:ml-20 mt-28 sm:">
-        <h2 class="font-syncopate text-2xl sm:text-5xl">À propos de moi</h2>
-        <h2 class="font-mrs-saint-delafield text-3xl ml-52 sm:ml-96 sm:text-7xl">à propos de moi</h2>
+        <h2 class="font-syncopate text-2xl sm:text-5xl text-center">À propos de moi</h2>
+        <h2 class="font-mrs-saint-delafield text-3xl ml-52 sm:ml-96 sm:text-7xl text-center">à propos de moi</h2>
       </div>
-      <div class="flex flex-col sm:flex-row items-center">
+      <div class="flex flex-col sm:flex-row items-center ">
         <div>
-          <div class="w-36 h-36 sm:w-96 sm:h-96 block bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-60 -ml-16 -mb-64"></div>
+          <div class="w-36 h-36 sm:w-96 sm:h-96 block bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-60 -ml-16 -mb-52"></div>
 
         <KinesisContainer>
             <KinesisElement
             :strength="10" 
             type="depth">
-        <img class="bg-gray-700 rounded-3xl m-10" src="@/assets/bryan.webp" alt="">
+        <img class="bg-gray-700 rounded-3xl ml-5  mb-36" src="@/assets/bryan.webp" alt="">
         
         </KinesisElement>
         </KinesisContainer>
@@ -91,3 +92,9 @@
   
   </main>
 </template>
+
+<style>
+#curseur{
+  cursor: url('/src/assets/curseur.svg')  54 57, auto;
+}
+</style>

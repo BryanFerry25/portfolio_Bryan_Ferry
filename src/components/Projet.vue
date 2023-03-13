@@ -9,6 +9,8 @@ defineProps({
     illustration: String,
     logiciel1: String,
     logiciel2: String,
+    logiciel3: String,
+    logiciel4: String,
     paragraphe: String,
     photo1: String,
     photo2: String,

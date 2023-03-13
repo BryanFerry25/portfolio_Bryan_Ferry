@@ -16,7 +16,7 @@ module.exports = {
         "unbounded": 'Unbounded',
         "portico-outline": "Outline",
         "portico-inline": "porticoregular",
-        "Goblin_One": "Goblin One",
+        "Metal_Mania": "Metal Mania",
       },
     },
   },

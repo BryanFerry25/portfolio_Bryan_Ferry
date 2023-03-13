@@ -7,21 +7,35 @@
 <template>
   <main id="curseur">
     
-
+    <div class="patterns font-unbounded">
+  <svg class=" svg_anim" width="100%" height="100%">
+ <text class="text_svg" x="45%" y="50%"  text-anchor="middle"  >
+   Bryan 
+ </text>
+ </svg>
+</div>
+<div class="patterns font-unbounded -mt-24">
+  <svg class=" svg_anim" width="100%" height="100%">
+ <text class="text_svg" x="52%" y="60%"  text-anchor="middle"  >
+   Ferry
+ </text>
+ </svg>
+</div>
 
     <div class="text-4xl sm:text-8xl flex flex-col text-center background-image bg-no-repeat espace sm:espace2">
+
+ 
       <div class=" flex text-right justify-end">
         
         <div class=" absolute w-36 h-36 sm:w-96 sm:h-96 block bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-30"></div>
       </div>
-      <kinesis-container>
-        <kinesis-element :strength="30">
-      <h1 class="font-portico-inline uppercase animate__animated animate__flipInX ">Bryan Ferry</h1>
-    </kinesis-element>
-    <kinesis-element :strength="20">
-      <h1 class="font-portico-outline ml-8 -mt-14 uppercase animate__animated animate__flipInX ">BRYAN FERRY</h1>
-    </kinesis-element>
-    </kinesis-container>
+
+
+
+
+
+
+
 
       <div class=" flex text-center justify-center mt-7 mb-48">
       <div class="font-mrs-saint-delafield text-white text-2xl text-center sm:text-6xl sm:text-left sm:flex items-center ">
@@ -171,6 +185,42 @@
 
 @import 'animate.css';
 
+
+.patterns {
+  height: 25vh;
+  z-index: 1000;
+}
+
+
+
+.text_svg {
+  font-family: "Goblin One";
+  letter-spacing: 10px;
+  stroke: #437de8;
+  font-size: 150px;
+  font-weight: 700;
+  stroke-width: 5;
+ 
+  animation: textAnimate 7s infinite alternate;
+  
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  30%;
+    
+    fill:hsl(0, 0%, 100%)
+
+  }
+  
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(347, 100%, 51%, 0)
+  }
+  
+}
 
 
 

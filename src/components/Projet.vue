@@ -40,6 +40,8 @@ defineProps({
             
             <ImgS v-if="logiciel1" bucket="prive-images-logiciels" :name="logiciel1" />
             <ImgS v-if="logiciel2" bucket="prive-images-logiciels" :name="logiciel2" />
+            <ImgS v-if="logiciel3" bucket="prive-images-logiciels" :name="logiciel3" />
+            <ImgS v-if="logiciel4" bucket="prive-images-logiciels" :name="logiciel4" />
         </div>
     </div>
     <div>

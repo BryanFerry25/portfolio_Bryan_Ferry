@@ -17,7 +17,7 @@ console.log("test", user)
 </script>
 
 <template>
-  <div class="about text-center justify-center font-unbounded text-xl -mt-96 ">
+  <div class="about text-center justify-center font-unbounded text-xl sm:-mt-96 -mt-6 ">
    
     <button v-if="user" @pointerdown="supabase.auth.signOut()">
         Se déconnecter ({{user.email}})

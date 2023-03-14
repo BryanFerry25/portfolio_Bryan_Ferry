@@ -150,7 +150,7 @@
 
       </div>
 
-
+ 
      
       <button class="glow-on-hover" type="button">
         <a id="button-1" class="button font-unbounded font-bold" href="mailto:ferrybryan25@gmail.com" target="_blank">Envoyer un mail<img id="arrow-hover" src="@/assets/paper_Plane_new.svg"/></a>
@@ -401,6 +401,9 @@ background-size: 90%;
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+
+
+
 </style>
 
 <script>

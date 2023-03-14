@@ -62,13 +62,24 @@ const menuOuvert = ref(false)
         aria-controls="menu"
         :aria-expanded="menuOuvert"
         @click="menuOuvert = !menuOuvert">
-          Remplacer par flèche        
+        <div class=" w-1/2 mt-6 ml-6">
+          <img src="@/assets/Slide_Up.svg" alt="">
+        </div>       
         <span class="sr-only">Fermer menu</span> 
       </button> 
-      <nav class="font-unbounded flex flex-col items-center border-t-8 border-red-500">
-        <RouterLink @click="menuOuvert = !menuOuvert" class="" to="/projets">Projets</RouterLink>
-        <a @click="menuOuvert = !menuOuvert" href="/#about">À propos</a>
-        <a @click="menuOuvert = !menuOuvert" href="/#contact">Contact</a>
+      <nav class="font-unbounded flex flex-col items-center space-y-20 text-2xl ">
+        <RouterLink @click="menuOuvert = !menuOuvert" class="" to="/projets">   
+          <div class="sign mb-60">
+      <span class="fast-flicker">P</span>RO<span class="flicker">JET</span>S
+    </div>
+    
+    Projets</RouterLink>
+        <a @click="menuOuvert = !menuOuvert" href="/#about" class="">   <div class="sign mb-120">
+      <span class="fast-flicker mr-5">À </span>PR<span class="flicker">OPO</span>S
+    </div>À propos</a>
+        <a @click="menuOuvert = !menuOuvert" href="/#contact"><div class="sign mb-60">
+      <span class="fast-flicker ">C </span>ON<span class="flicker">TA</span>CT
+    </div>Contact</a>
         <RouterLink v-if="user" @click="menuOuvert = !menuOuvert" to="/connexion">Compte</RouterLink>
       </nav>
     </div>
@@ -84,7 +95,201 @@ const menuOuvert = ref(false)
 
 <style>
 
+.sign {
+  font-family: "Unbounded";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 15%;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #6a10c4,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 50%;
+  font-family: "Unbounded";
+  text-transform: uppercase;
+  font-size: 2em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #65afff,
+    -0.2rem 0.1rem 1rem #65a8ff, 0.2rem 0.1rem 1rem #65a8ff,
+    0 -0.5rem 2rem #24a7ff, 0 0.5rem 3rem #24a7ff;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
 
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #65afff,
+      -0.2rem 0.1rem 1rem #65a8ff, 0.2rem 0.1rem 1rem #65a8ff,
+      0 -0.5rem 2rem #24a7ff, 0 0.5rem 3rem #24a7ff;
+  }
+  28%,
+  33% {
+    color: #65a8ff;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #24a7ff;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #7c19a3;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #65a8ff,
+      -0.2rem 0.1rem 1rem #65a8ff, 0.2rem 0.1rem 1rem #65a8ff,
+      0 -0.5rem 2rem #24a7ff, 0 0.5rem 3rem #24a7ff;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
 
 .nav__link {
     position: relative;

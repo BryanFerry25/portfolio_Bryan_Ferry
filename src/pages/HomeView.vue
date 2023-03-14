@@ -9,14 +9,14 @@
     
     <div class="patterns -mt-20 sm:-mt-20 text-center">
   <svg class=" svg_anim" width="100%" height="100%">
- <text class="text_svg" x="48%" y="50%"  text-anchor="middle"   >
+ <text class="text_svg text-8xl sm:text-[170px] lg:text-[220px] " x="50%" y="50%"  text-anchor="middle"   >
    Bryan 
  </text>
  </svg>
 </div>
-<div class="patterns mobile_ajust -mt-64 sm:-mt-48 text-center -mb-28">
+<div class="patterns mobile_ajust -mt-72 sm:-mt-56 lg:-mt-48 text-center -mb-28">
   <svg class=" svg_anim" width="100%" height="100%">
- <text class="text_svg2" x="58%" y="60%"  text-anchor="middle"  >
+ <text class="text_svg2 text-7xl sm:text-9xl lg:text-[160px]" x="58%" y="60%"  text-anchor="middle"  >
    Ferry
  </text>
  </svg>
@@ -40,7 +40,7 @@
       <div class=" flex text-center justify-center mt-7 mb-48">
       <div class="font-mrs-saint-delafield text-white text-2xl text-center sm:text-6xl sm:text-left sm:flex items-center ">
       <div class="sm:ml-10">
-        <p class="shadow_blue">{{ texteAffiche }}</p>
+        <p class="shadow_blue text-3xl sm:text-5xl lg:text-6xl">{{ texteAffiche }}</p>
        
       </div>
     </div>
@@ -84,6 +84,7 @@
       </div>
     </div>
   </div>
+  <a href="http://127.0.0.1:5173/projets/projet/Monster%20Energy">
   <div class="box shadow_blue2">
     <div class="imgBx">
       <img src="@/assets/michael.webp">
@@ -96,7 +97,7 @@
       </div>
     </div>
   </div>
-  
+</a>
 </div>
 
 </div>
@@ -511,7 +512,7 @@
 }
 
 .patterns {
-  height: 40vh;
+  height: 45vh;
   z-index: 1000;
 }
 

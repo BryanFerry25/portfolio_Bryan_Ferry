@@ -81,6 +81,7 @@ async function supprimerOffre(dataForm) {
         type="select"
         name="logiciel1"
         label="Logiciel"
+        placeholder="Selectionner un logiciel"
         :options="optionsLogiciel">
         </FormKit>
         <FormKit
@@ -88,6 +89,7 @@ async function supprimerOffre(dataForm) {
         type="select"
         name="logiciel2"
         label="Logiciel"
+        placeholder="Selectionner un logiciel"
         :options="optionsLogiciel">
         </FormKit>
         <FormKit
@@ -95,6 +97,7 @@ async function supprimerOffre(dataForm) {
         type="select"
         name="logiciel3"
         label="Logiciel"
+        placeholder="Selectionner un logiciel"
         :options="optionsLogiciel">
         </FormKit>
         <FormKit
@@ -102,6 +105,7 @@ async function supprimerOffre(dataForm) {
         type="select"
         name="logiciel4"
         label="Logiciel"
+        placeholder="Selectionner un logiciel"
         :options="optionsLogiciel">
         </FormKit>
         <FormKit :type="imgUploadSupabase" name="photo1" label="Photos du Projet"/>

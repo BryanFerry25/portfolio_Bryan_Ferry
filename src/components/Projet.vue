@@ -26,7 +26,7 @@ defineProps({
     <div>
         <div class="patterns font-unbounded -mt-10 sm:-mt-20 text-center">
             <svg class=" svg_anim" width="100%" height="100%">
-            <text class="text_svg" x="48%" y="50%"  text-anchor="middle"   >
+            <text class="text_svg" x="50%" y="50%"  text-anchor="middle"   >
                      {{ title }}
             </text>
             </svg>
@@ -38,14 +38,14 @@ defineProps({
         <h2 class="font-unbounded font-medium text-3xl text-center mt-20 mb-20">Logiciel(s) utilisé(s)</h2>
         <div class=" flex flex-wrap gap-5 justify-center">
             
-            <ImgS v-if="logiciel1" bucket="prive-images-logiciels" :name="logiciel1" />
-            <ImgS v-if="logiciel2" bucket="prive-images-logiciels" :name="logiciel2" />
-            <ImgS v-if="logiciel3" bucket="prive-images-logiciels" :name="logiciel3" />
-            <ImgS v-if="logiciel4" bucket="prive-images-logiciels" :name="logiciel4" />
+            <ImgS class=" w-16 xs:w-20 md:w-24 lg:w-36" v-if="logiciel1" bucket="prive-images-logiciels" :name="logiciel1" />
+            <ImgS class=" w-16" v-if="logiciel2" bucket="prive-images-logiciels" :name="logiciel2" />
+            <ImgS class=" w-16" v-if="logiciel3" bucket="prive-images-logiciels" :name="logiciel3" />
+            <ImgS class=" w-16" v-if="logiciel4" bucket="prive-images-logiciels" :name="logiciel4" />
         </div>
     </div>
     <div>
-        <p class="font-unbounded px-60 my-20 text-xl align">{{ paragraphe }}</p>
+        <p class="font-unbounded xl:px-60 lg:px-32 px-10 my-20 lg:text-xl text-base  align">{{ paragraphe }}</p>
     </div>
     <div>
         <h2 class="font-unbounded font-medium text-3xl text-center mt-20 mb-20">Photos supplémentaires</h2>
@@ -63,7 +63,7 @@ defineProps({
 
 <style>
 .align{
-  text-align: justify;
+
   text-justify: inter-word;
 
 }
@@ -86,16 +86,28 @@ defineProps({
   
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 1024px) {
 .text_svg {
-  font-size: 120px;
+  font-size: 140px;
   
 }
-
-
-
 }
 
+
+
+@media only screen and (max-width: 1024px) {
+.text_svg {
+  font-size: 60px;
+  
+}
+}
+
+@media only screen and (max-width: 640px) {
+.text_svg {
+  font-size: 40px;
+  
+}
+}
 
 @keyframes textAnimate {
   0% {

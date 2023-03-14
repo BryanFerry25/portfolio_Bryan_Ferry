@@ -15,7 +15,7 @@ const menuOuvert = ref(false)
       <RouterLink to="/">
         <img alt="Vue logo" class="logo w-1/3 sm:w-2/3 animate__animated animate__rollIn " src="@/assets/logo_bryan_ferry.svg" />
       </RouterLink>
-      <div class="hidden sm:flex items-center gap-10">
+      <div class="hidden sm:flex items-center gap-10 sm:text-sm sm:justify-end lg:text-xl md:text-lg ">
         <RouterLink class="nav__link" to="/projets">Projets</RouterLink>
         <a class="nav__link" href="/#about">À propos</a>
         <a class="nav__link" href="/#contact">Contact</a>
@@ -29,8 +29,8 @@ const menuOuvert = ref(false)
             </ul>
         </div>
         <div class=" hidden sm:flex items-center ml-5 mr-5 gap-6">
-        <a class=" scale-100 hover-image shadow_pink animate__animated animate__bounceInDown" href="https://www.instagram.com/bryanf.pro/" target="_blank"><img src="@/assets/Instagram_white.svg" alt="Logo instagram"></a>
-        <a  class=" scale-100 hover-image shadow_blue animate__animated animate__bounceInDown" href="https://www.linkedin.com/in/bryan-ferry-523546216/" target="_blank"><img src="@/assets/LinkedIn_white.svg" alt="Logo LinkedIn"></a>
+        <a class=" hover-image shadow_pink  " href="https://www.instagram.com/bryanf.pro/" target="_blank"><img src="@/assets/Instagram_white.svg" alt="Logo instagram"></a>
+        <a  class="  hover-image shadow_blue " href="https://www.linkedin.com/in/bryan-ferry-523546216/" target="_blank"><img src="@/assets/LinkedIn_white.svg" alt="Logo LinkedIn"></a>
       </div>
       </div>
       <button class="relative sm:hidden"
@@ -330,7 +330,7 @@ const menuOuvert = ref(false)
 }
 
 .hover-image:hover {
-  transform: scale(1.1);
+  transform: scale(2);
 }
 
 .shadow_pink{

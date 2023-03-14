@@ -52,7 +52,55 @@
 
     </div>  
    
-    
+
+    <div class="sm:ml-20 -mt-20">
+        <h2 class="font-syncopate text-2xl sm:text-5xl text-center mt-10">Mes derniers projets</h2>
+        <h2 class="font-mrs-saint-delafield text-3xl ml-28 sm:ml-40 sm:text-7xl text-center">Mes derniers projets</h2>
+      </div>
+
+<div class="box_recent">
+      <div class="recent_project">
+  <div class="box shadow_blue2">
+    <div class="imgBx">
+      <img src="@/assets/sprite.webp">
+    </div>
+    <div class="content">
+      <div>
+        <h2 class=" font-syncopate title_recent">Affiche Sprite</h2>
+        <p class=" font-unbounded title_recent">Affiche sprite qui fait met en avant la fraicheur et les saveurs que la boisson fournit
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="box shadow_pink2">
+    <div class="imgBx">
+      <img src="@/assets/monster.webp">
+    </div>
+    <div class="content">
+      <div>
+        <h2 class=" font-syncopate title_recent">Monster Energy</h2>
+        <p class=" font-unbounded title_recent">Affiche publicitaire pour la marque monster énergie qui met en avant une de leurs canettes tenues par un monstre
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="box shadow_blue2">
+    <div class="imgBx">
+      <img src="@/assets/michael.webp">
+    </div>
+    <div class="content">
+      <div>
+        <h2 class=" font-syncopate title_recent">Michael Scofield</h2>
+        <p class=" font-unbounded title_recent">Affiche pouvant servir de présentation pour l'acteur principal de la série Prison Break
+        </p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+</div>
+
     <div class="text-center sm:text-left">
       <div class="sm:ml-20 -mt-20">
         <h2 class="font-syncopate text-2xl sm:text-5xl text-center mt-10">Projets</h2>
@@ -211,8 +259,115 @@
 
 @import 'animate.css';
 
+.box_recent{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+ 
+  
 
-
+}
+.recent_project {
+  position: relative;
+  width: 1300px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  margin: auto;
+  margin-top:10px ;
+}
+.recent_project .box {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  background: #000;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 45px;
+}
+.recent_project:hover .box {
+  transform: rotateY(25deg);
+}
+.recent_project .box:hover ~ .box {
+  transform: rotateY(-25deg);
+}
+.recent_project .box:hover {
+  transform: rotateY(0deg) scale(1.25);
+  z-index: 1;
+  box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+.recent_project .box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.recent_project .box .imgBx:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,#BC2EF5,#54BCFD);
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+.recent_project .box:hover .imgBx:before {
+  opacity: 1;
+}
+.recent_project .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.recent_project .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+.recent_project .box .content h2 {
+  color: #fff;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 20px;
+  transform: translateY(200px);
+  transition-delay: 0.3s;
+}
+.recent_project .box:hover .content h2 {
+  transform: translateY(0px);
+}
+.recent_project .box .content p {
+  color: #fff;
+  transition: 0.5s;
+  font-size: 14px;
+  transform: translateY(200px);
+  transition-delay: 0.4s;
+}
+.recent_project .box:hover .content p {
+  transform: translateY(0px);
+}
 
 .letter-image {
   display: flex;
@@ -385,7 +540,22 @@
   animation: textAnimate 7s infinite alternate;
   
 }
+@media only screen and (max-width: 1140px) {
 
+.recent_project .box {
+  
+  
+ 
+  height: 400px;
+  width: 400px;
+  margin-right: 400px;
+  margin-left: 400px;
+}
+.title_recent{
+  opacity: 1;
+}
+
+}
 @media only screen and (max-width: 768px) {
 .text_svg {
   font-size: 140px;
@@ -394,7 +564,18 @@
 .text_svg2 {
   font-size: 110px;
 }
-
+.recent_project .box {
+  
+  
+ 
+  height: 200px;
+  width: 200px;
+  margin-right: 400px;
+  margin-left: 400px;
+}
+.title_recent{
+  opacity: 0;
+}
 
 }
 
@@ -482,6 +663,13 @@ background-size: 90%;
 }
 .shadow_blue{
   filter: drop-shadow(0px 0px 5px #2FAAF0);
+}
+
+.shadow_blue2{
+  filter: drop-shadow(0px 0px 20px #93e1ed9e);
+}
+.shadow_pink2{
+  filter: drop-shadow(0px 0px 20px #db93ed9e);
 }
 .scintillate {
   
@@ -577,7 +765,7 @@ background-size: 90%;
 </style>
 
 <script>
-
+ 
   export default {
   data() {
     return {
@@ -607,4 +795,5 @@ background-size: 90%;
 
 
 </script>
+
 

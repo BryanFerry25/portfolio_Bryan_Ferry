@@ -40,7 +40,7 @@
       <div class=" flex text-center justify-center mt-7 mb-48">
       <div class="font-mrs-saint-delafield text-white text-2xl text-center sm:text-6xl sm:text-left sm:flex items-center ">
       <div class="sm:ml-10">
-        <p>{{ texteAffiche }}</p>
+        <p class="shadow_blue">{{ texteAffiche }}</p>
        
       </div>
     </div>
@@ -116,21 +116,46 @@
 
 
 
+<div class=" flex text-center justify-center -mt-20 ">
+        <a href="src/assets/cv.pdf"  download="cv_Bryan_Ferry.pdf"> 
+  <div class="letter-image">
+  <div class="animated-mail">
+    <div class="back-fold"></div>
+    <div class="letter">
+      <div class="letter-border"></div>
+      <div class="letter-title"></div>
+      <div class="letter-context"></div>
+      <div class="letter-stamp">
+        <div class="letter-stamp-inner"></div>
+      </div>
+    </div>
+    <div class="top-fold"></div>
+    <div class="body"></div>
+    <div class="left-fold"></div>
+  </div>
+  <div class="shadow"></div>
+</div>
+</a>
+</div>
 
-
-          <div class="w-max m-auto bg-gradient-to-t from-cyan-500 to-purple-500 rounded-3xl p-1 mb-40">
+          <div class="w-max m-auto  rounded-3xl p-1 mb-40">
             <div class="bg-black-light h-full w-full rounded-3xl px-10 py-5 ">
 
                 
 
               <a href="src/assets/cv.pdf" class="font-unbounded font-medium" download="cv_Bryan_Ferry.pdf"> 
-                <span>Télécharger mon CV</span>
+                <span class="shadow_blue">Télécharger mon CV </span>
               </a>
             </div>    
           </div>
         </div>
+        <div class=" flex text-right justify-end">
+        
+        <div class=" absolute w-36 h-36 sm:w-96 sm:h-96 block bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-30"></div>
+      </div>
       </div>
     </div>
+
     <div>
       <div id="contact" class="text-center  mt-12">
         <h2 class="font-syncopate text-2xl sm:text-5xl">Contact</h2>
@@ -174,7 +199,9 @@
     </div>
     
 
-
+    <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
 
   </main>
 </template>
@@ -186,6 +213,146 @@
 
 @import 'animate.css';
 
+.letter-image {
+  display: flex;
+  justify-items: center;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+
+  cursor: pointer;
+}
+
+.animated-mail {
+  position: absolute;
+  height: 150px;
+  width: 200px;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+}
+
+.animated-mail .body {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 100px 200px;
+  border-color: transparent transparent #3484da transparent;
+  z-index: 2;
+}
+
+.animated-mail .top-fold {
+  position: absolute;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 100px 0 100px;
+  transform-origin: 50% 0%;
+  transition: transform .4s .4s, z-index .2s .4s;
+  -webkit-transform-origin: 50% 0%;
+  -webkit-transition: transform .4s .4s, z-index .2s .4s;
+  -moz-transform-origin: 50% 0%;
+  -moz-transition: transform .4s .4s, z-index .2s .4s;
+  border-color: #0f5aa6 transparent transparent transparent;
+  z-index: 2;
+}
+
+.animated-mail .back-fold {
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  height: 100px;
+  background: #3484da;
+  z-index: 0;
+}
+
+.animated-mail .left-fold {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 0 50px 100px;
+  border-color: transparent transparent transparent #3484da;
+  z-index: 2;
+}
+
+.animated-mail .letter {
+  left: 20px;
+  bottom: 0px;
+  position: absolute;
+  width: 160px;
+  height: 60px;
+  background: white;
+  z-index: 1;
+  overflow: hidden;
+  transition: .4s .2s;
+  -webkit-transition: .4s .2s;
+  -moz-transition: .4s .2s;
+}
+
+.animated-mail .letter .letter-border {
+  height: 10px;
+  width: 100%;
+  background: repeating-linear-gradient(-45deg, #8fb5de, #92b0d0 8px, transparent 8px, transparent 18px);
+}
+
+.animated-mail .letter .letter-title {
+  margin-top: 10px;
+  margin-left: 5px;
+  height: 10px;
+  width: 40%;
+  background: #98b9de;
+}
+
+.animated-mail .letter .letter-context {
+  margin-top: 10px;
+  margin-left: 5px;
+  height: 10px;
+  width: 20%;
+  background: #b1cce9;
+}
+
+.animated-mail .letter .letter-stamp {
+  margin-top: 30px;
+  margin-left: 120px;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  background: #96bae1;
+  opacity: 0.3;
+}
+
+
+
+.letter-image:hover .animated-mail {
+  transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+}
+
+.letter-image:hover .animated-mail .top-fold {
+  transition: transform .4s, z-index .2s;
+  transform: rotateX(180deg);
+  -webkit-transition: transform .4s, z-index .2s;
+  -webkit-transform: rotateX(180deg);
+  -moz-transition: transform .4s, z-index .2s;
+  -moz-transform: rotateX(180deg);
+  z-index: 0;
+}
+
+.letter-image:hover .animated-mail .letter {
+  height: 180px;
+}
+
+.letter-image:hover .shadow {
+  width: 250px;
+}
 
 .patterns {
   height: 35vh;
@@ -312,7 +479,9 @@ background-size: 90%;
 .shadow_pink{
   filter: drop-shadow(0px 0px 5px #9022CF);
 }
-
+.shadow_blue{
+  filter: drop-shadow(0px 0px 5px #2FAAF0);
+}
 .scintillate {
   
   animation: scintillate 2s ease-in-out infinite;

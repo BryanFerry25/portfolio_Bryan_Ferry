@@ -67,19 +67,27 @@ const menuOuvert = ref(false)
         </div>       
         <span class="sr-only">Fermer menu</span> 
       </button> 
-      <nav class="font-unbounded flex flex-col items-center space-y-20 text-2xl ">
+      <nav class="font-unbounded flex flex-col justify-center text-2xl ">
+
+<div class="space-x-10  text-center">
         <RouterLink @click="menuOuvert = !menuOuvert" class="" to="/projets">   
-          <div class="sign mb-60">
-      <span class="fast-flicker">P</span>RO<span class="flicker">JET</span>S
-    </div>
+          <div class="sign mb-20"><span class="fast-flicker">P</span>RO<span class="flicker">JET</span>S</div>
     
-    Projets</RouterLink>
-        <a @click="menuOuvert = !menuOuvert" href="/#about" class="">   <div class="sign mb-120">
-      <span class="fast-flicker mr-5">À </span>PR<span class="flicker">OPO</span>S
-    </div>À propos</a>
-        <a @click="menuOuvert = !menuOuvert" href="/#contact"><div class="sign mb-60">
-      <span class="fast-flicker ">C </span>ON<span class="flicker">TA</span>CT
-    </div>Contact</a>
+    </RouterLink>
+
+
+        <a @click="menuOuvert = !menuOuvert" href="/#about" class="">   
+          <div class="sign mb-20 "><span class="fast-flicker ">À  </span>PR<span class="flicker">OPO</span>S</div>
+          
+          </a>
+
+
+        <a @click="menuOuvert = !menuOuvert" href="/#contact">
+          <div class="sign mb-20"><span class="fast-flicker ">C</span>ON<span class="flicker">TA</span>CT</div>
+          
+          </a>
+        </div>
+
         <RouterLink v-if="user" @click="menuOuvert = !menuOuvert" to="/connexion">Compte</RouterLink>
       </nav>
     </div>
@@ -97,24 +105,17 @@ const menuOuvert = ref(false)
 
 .sign {
   font-family: "Unbounded";
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 15%;
-  height: 15%;
   background-image: radial-gradient(
     ellipse 50% 35% at 50% 50%,
-    #6a10c4,
+    #1013c4,
     transparent
   );
-  transform: translate(-50%, -50%);
-  letter-spacing: 2;
-  left: 50%;
-  top: 50%;
+  
+
+
   font-family: "Unbounded";
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #ffe6ff;
   text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #65afff,
     -0.2rem 0.1rem 1rem #65a8ff, 0.2rem 0.1rem 1rem #65a8ff,

@@ -29,8 +29,8 @@ const menuOuvert = ref(false)
             </ul>
         </div>
         <div class=" hidden sm:flex items-center ml-5 mr-5 gap-6">
-        <a class=" scale-100 hover-image shadow_pink" href="https://www.instagram.com/bryanf.pro/" target="_blank"><img src="@/assets/Instagram_white.svg" alt="Logo instagram"></a>
-        <a  class=" scale-100 hover-image shadow_blue" href="https://www.linkedin.com/in/bryan-ferry-523546216/" target="_blank"><img src="@/assets/LinkedIn_white.svg" alt="Logo LinkedIn"></a>
+        <a class=" scale-100 hover-image shadow_pink animate__animated animate__bounceInDown" href="https://www.instagram.com/bryanf.pro/" target="_blank"><img src="@/assets/Instagram_white.svg" alt="Logo instagram"></a>
+        <a  class=" scale-100 hover-image shadow_blue animate__animated animate__bounceInDown" href="https://www.linkedin.com/in/bryan-ferry-523546216/" target="_blank"><img src="@/assets/LinkedIn_white.svg" alt="Logo LinkedIn"></a>
       </div>
       </div>
       <button class="relative sm:hidden"

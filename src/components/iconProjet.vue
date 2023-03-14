@@ -13,7 +13,7 @@ defineProps({
             :strength="20" 
             type="depth">
                 <ImgS 
-                class="w-24 h-24 sm:w-96 sm:h-96 ml-10 "
+                class="w-40 h-40 sm:w-96 sm:h-96 ml-10 mb-10 "
                 bucket="prive-images-logiciels"
                 :name="illustration"/>
             </KinesisElement>

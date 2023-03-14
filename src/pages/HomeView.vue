@@ -76,7 +76,7 @@
 
 
 
-          <listProjet :max="9" />
+          <listProjet :max="8" />
         </div>
       </div>
       <div class="w-max m-auto bg-gradient-to-t from-cyan-500 to-purple-500 text-xs sm:text-2xl rounded-3xl p-1">
@@ -107,7 +107,7 @@
         </KinesisElement>
         </KinesisContainer>
       </div>
-        <div class="text-xs mx-10 sm:mr-10 sm:text-2xl">
+        <div class="text-xs mx-10 sm:mr-10 sm:text-2xl -mb-32 sm:mb-0">
           <div class=" p-2 sm:p-32">
           <p class="font-unbounded mb-10">Je m'appelle Bryan Ferry et je suis actuellement un étudiant en <strong class="text-purple-500">2ème année de BUT Métier du Multimédia et de l'Internet avec la spécialité design</strong> à Montbéliard.</p>
           <p class="font-unbounded mb-10">Je suis spécialisé dans le domaine du design et plus précisément sur l'UI Design, la création d'affiche, de logo et de tout ce qui est lié à la <strong class="text-cyan-400">création graphique d'une marque. </strong> </p>
@@ -363,7 +363,7 @@
 
 
 .text_svg {
-  font-family: "Seaweed Script";
+  font-family: "Metal Mania";
   letter-spacing: 2px;
   stroke: #437de8;
   font-size: 250px;

@@ -32,11 +32,11 @@ defineProps({
             </svg>
         </div>
   
-        <ImgS v-if="illustration" class="w-4/5 sm:w-1/2 m-auto" bucket="prive-images-logiciels" :name="illustration" />
+        <ImgS v-if="illustration" class="w-4/5 sm:w-2/5 m-auto -mt-14" bucket="prive-images-logiciels" :name="illustration" />
 </div>
     <div class="my-5">
-        <h2 class="font-unbounded font-medium text-2xl">Logiciel(s) utilisé(s)</h2>
-        <div>
+        <h2 class="font-unbounded font-medium text-3xl text-center mt-20 mb-20">Logiciel(s) utilisé(s)</h2>
+        <div class=" flex flex-wrap gap-5 justify-center">
             
             <ImgS v-if="logiciel1" bucket="prive-images-logiciels" :name="logiciel1" />
             <ImgS v-if="logiciel2" bucket="prive-images-logiciels" :name="logiciel2" />
@@ -45,10 +45,10 @@ defineProps({
         </div>
     </div>
     <div>
-        <p class="font-unbounded">{{ paragraphe }}</p>
+        <p class="font-unbounded px-60 my-20 text-xl align">{{ paragraphe }}</p>
     </div>
     <div>
-        <h2 class="font-unbounded text-xl my-5">Photos supplémentaires</h2>
+        <h2 class="font-unbounded font-medium text-3xl text-center mt-20 mb-20">Photos supplémentaires</h2>
             <div class="flex flex-wrap gap-5 justify-center">
                 <ImgS v-if="photo1" bucket="prive-images-logiciels" :name="photo1" />
                 <ImgS v-if="photo2" bucket="prive-images-logiciels" :name="photo2" />
@@ -62,7 +62,11 @@ defineProps({
 </template>
 
 <style>
+.align{
+  text-align: justify;
+  text-justify: inter-word;
 
+}
 .patterns {
   height: 35vh;
   z-index: 1000;
@@ -73,7 +77,7 @@ defineProps({
 .text_svg {
   font-family: "Metal Mania";
   letter-spacing: 10px;
-  stroke: #437de8;
+  stroke: #ffffff;
   font-size: 200px;
   font-weight: 700;
   stroke-width: 1;

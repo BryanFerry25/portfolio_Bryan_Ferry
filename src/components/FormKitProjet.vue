@@ -52,13 +52,14 @@ async function supprimerOffre(dataForm) {
 </script>
 
 <template>
-  <div class=" text-center flex justify-center font-unbounded">
+  <div class=" text-center flex justify-center font-unbounded ">
     <FormKit
+ 
         id="form"
         type="form" 
         :config="{ classes:{input:'text-black', actions: 'justify-self-end', form: '$reset grid grid-cols-1 gap-2', }}"
         :submit-attrs="{
-        inputClass: 'rounded-md shadow-sm focus-style p-2 bg-blue-300 ',
+        inputClass: 'rounded-md shadow-sm focus-style p-5 bg-blue-300 ',
         wrapperClass: '',
         outerClass: '',
       }"
@@ -66,28 +67,38 @@ async function supprimerOffre(dataForm) {
         v-model="offre"
         :submit-label="offre ? 'Mettre à jour projet' : 'Créer nouveau projet'">
         <FormKit type="hidden" name="id" />
-        <FormKit name="title" label="Nom du Projet"/>
-        <FormKit :type="imgUploadSupabase" name="illustration" label="Illustration du Projet"/>
-        <FormKit name="paragraphe" label="Présentation du Projet"/>
+        <FormKit name="title" style="color: white;height: 50px;width:500px;" label="Nom du Projet"/>
+        <FormKit :type="imgUploadSupabase" name="illustration"  label="Illustration du Projet"/>
+
+
+
+        <div class=" custom-label text-white ">
+        <FormKit class="  " style="color: white; height: 300px; width:600px; text-align: justify; text-justify: inter-word; " name="paragraphe" label="Présentation du Projet"/>
+        </div>
+
         <FormKit
+        style="color: white;height: 50px;width:500px;"
         type="select"
         name="logiciel1"
         label="Logiciel"
         :options="optionsLogiciel">
         </FormKit>
         <FormKit
+        style="color: white;height: 50px;width:500px;"
         type="select"
         name="logiciel2"
         label="Logiciel"
         :options="optionsLogiciel">
         </FormKit>
         <FormKit
+        style="color: white;height: 50px;width:500px;"
         type="select"
         name="logiciel3"
         label="Logiciel"
         :options="optionsLogiciel">
         </FormKit>
         <FormKit
+        style="color: white;height: 50px;width:500px;"
         type="select"
         name="logiciel4"
         label="Logiciel"
@@ -121,3 +132,15 @@ Supprimer le projet        </button>
     </FormKit>
   </div>
 </template>
+
+
+<style>
+
+label {
+  height: 50px;
+  width: 200px;
+  color: white;
+  fill: white;
+}
+
+</style>

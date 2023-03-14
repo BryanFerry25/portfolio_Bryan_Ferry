@@ -5,16 +5,16 @@
 </script>
 
 <template>
-  <main id="top">
+  <main>
     
-    <div class="patterns -mt-10 sm:-mt-20 text-center">
+    <div class="patterns -mt-20 sm:-mt-20 text-center">
   <svg class=" svg_anim" width="100%" height="100%">
  <text class="text_svg" x="48%" y="50%"  text-anchor="middle"   >
    Bryan 
  </text>
  </svg>
 </div>
-<div class="patterns mobile_ajust -mt-60 sm:-mt-48 text-center -mb-28">
+<div class="patterns mobile_ajust -mt-64 sm:-mt-48 text-center -mb-28">
   <svg class=" svg_anim" width="100%" height="100%">
  <text class="text_svg2" x="58%" y="60%"  text-anchor="middle"  >
    Ferry
@@ -388,11 +388,11 @@
 
 @media only screen and (max-width: 768px) {
 .text_svg {
-  font-size: 160px;
+  font-size: 140px;
   
 }
 .text_svg2 {
-  font-size: 120px;
+  font-size: 110px;
 }
 
 

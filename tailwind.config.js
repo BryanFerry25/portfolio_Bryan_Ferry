@@ -18,6 +18,7 @@ module.exports = {
         "portico-outline": "Outline",
         "portico-inline": "porticoregular",
         "Metal_Mania": "Metal Mania",
+        "Seaweed Script":"Seaweed Script",
       },
     },
   },

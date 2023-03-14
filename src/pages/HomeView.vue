@@ -5,18 +5,18 @@
 </script>
 
 <template>
-  <main id="curseur">
+  <main id="top">
     
-    <div class="patterns font-unbounded -mt-10 sm:-mt-20 text-center">
+    <div class="patterns -mt-10 sm:-mt-20 text-center">
   <svg class=" svg_anim" width="100%" height="100%">
  <text class="text_svg" x="48%" y="50%"  text-anchor="middle"   >
    Bryan 
  </text>
  </svg>
 </div>
-<div class="patterns font-unbounded mobile_ajust -mt-60 sm:-mt-48 text-center -mb-28">
+<div class="patterns mobile_ajust -mt-60 sm:-mt-48 text-center -mb-28">
   <svg class=" svg_anim" width="100%" height="100%">
- <text class="text_svg2" x="54%" y="60%"  text-anchor="middle"  >
+ <text class="text_svg2" x="58%" y="60%"  text-anchor="middle"  >
    Ferry
  </text>
  </svg>
@@ -199,9 +199,7 @@
     </div>
     
 
-    <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
+
 
   </main>
 </template>
@@ -212,6 +210,9 @@
 
 
 @import 'animate.css';
+
+
+
 
 .letter-image {
   display: flex;
@@ -355,14 +356,26 @@
 }
 
 .patterns {
-  height: 35vh;
+  height: 40vh;
   z-index: 1000;
 }
 
 
 
 .text_svg {
-  font-family: "Metal Mania";
+  font-family: "Seaweed Script";
+  letter-spacing: 2px;
+  stroke: #437de8;
+  font-size: 250px;
+  font-weight: 700;
+  stroke-width: 1;
+ 
+  animation: textAnimate 7s infinite alternate;
+  
+}
+
+.text_svg2 {
+  font-family: "Seaweed Script";
   letter-spacing: 10px;
   stroke: #437de8;
   font-size: 200px;
@@ -373,25 +386,13 @@
   
 }
 
-.text_svg2 {
-  font-family: "Metal Mania";
-  letter-spacing: 10px;
-  stroke: #437de8;
-  font-size: 160px;
-  font-weight: 700;
-  stroke-width: 1;
- 
-  animation: textAnimate 7s infinite alternate;
-  
-}
-
 @media only screen and (max-width: 768px) {
 .text_svg {
-  font-size: 120px;
+  font-size: 160px;
   
 }
 .text_svg2 {
-  font-size: 100px;
+  font-size: 120px;
 }
 
 
@@ -491,7 +492,7 @@ background-size: 90%;
 @keyframes scintillate {
   0% {
     scale: 1;
-    filter: drop-shadow(0px 0px 5px #9022CF);
+    filter: drop-shadow(0px 0px 5px #2FAAF0);
   }
   50% {
     scale: 1.05;
@@ -499,7 +500,7 @@ background-size: 90%;
   }
   100% {
     scale: 1;
-    filter: drop-shadow(0px 0px 5px #9022CF);
+    filter: drop-shadow(0px 0px 5px #2FAAF0);
   }
 }
 .hover-image {
@@ -526,7 +527,7 @@ background-size: 90%;
 
 .glow-on-hover:before {
     content: '';
-    background: linear-gradient(45deg, #9d08b7, #9d00ff, #6600ff, #1100ff, #0084ff, #12ace4, #0000ff, #9500ff, #c000d2);
+    background: linear-gradient(45deg, #1075c8, #2b63cc, #3535e1, #1100ff, #0084ff, #12ace4, #0000ff, #1812c8, #002ad2);
     position: absolute;
     top: -2px;
     left:-2px;

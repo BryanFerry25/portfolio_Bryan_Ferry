@@ -40,7 +40,7 @@
       <div class=" flex text-center justify-center mt-7 mb-48">
       <div class="font-mrs-saint-delafield text-white text-2xl text-center sm:text-6xl sm:text-left sm:flex items-center ">
       <div class="sm:ml-10">
-        <p class="shadow_blue text-3xl sm:text-5xl lg:text-6xl">{{ texteAffiche }}</p>
+        <p class="shadow_blue text-3xl sm:text-5xl lg:text-6xl md:my-8">{{ texteAffiche }}</p>
        
       </div>
     </div>
@@ -58,7 +58,7 @@
         <h2 class="font-mrs-saint-delafield text-3xl ml-28 sm:ml-40 sm:text-7xl text-center">Mes derniers projets</h2>
       </div>
 
-<div class="box_recent">
+<div class="box_recent min-h-[80vh] mb-40 lg:mb-4">
       <div class="recent_project">
   <div class="box shadow_blue2">
     <div class="imgBx">
@@ -137,11 +137,11 @@
       </div>
     </div>
     <div>
-      <div id="about" class="text-center sm:text-left sm:ml-20 mt-28 sm:">
+      <div id="about" class="text-center sm:text-left sm:ml-20 mt-28 ">
         <h2 class="font-syncopate text-2xl sm:text-5xl text-center">À propos de moi</h2>
         <h2 class="font-mrs-saint-delafield text-3xl ml-52 sm:ml-96 sm:text-7xl text-center">à propos de moi</h2>
       </div>
-      <div class="flex flex-col sm:flex-row items-center ">
+      <div class="flex flex-col xl:flex-row items-center ">
         <div>
           <div class="w-36 h-36 sm:w-96 sm:h-96 block bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-30 -ml-16 -mb-52"></div>
 
@@ -149,15 +149,15 @@
             <KinesisElement
             :strength="20" 
             type="depth">
-<div class=" flex sm:text-left text-center justify-center">
-        <img class="bg-gray-700 rounded-3xl ml-0 sm:ml-14 sm:mb-36 mb-10  sm:w-96 w-1/2 mt-20 sm:-mt-52   " src="@/assets/bryan.webp" alt="">
+<div class=" flex sm:text-left text-center justify-center xl:mb-[500px] xl:-mt-40 sm:-mt-20 mt-24 ">
+        <img class="bg-gray-700 rounded-3xl ml-0 sm:ml-14 sm:mb-36 mb-10  sm:w-96 w-1/2     " src="@/assets/bryan.webp" alt="">
       </div>
         
         </KinesisElement>
         </KinesisContainer>
       </div>
         <div class="text-xs mx-10 sm:mr-10 sm:text-2xl -mb-32 sm:mb-0">
-          <div class=" p-2 sm:p-32">
+          <div class=" p-2 sm:p-2 xl:p-40">
           <p class="font-unbounded mb-10">Je m'appelle Bryan Ferry et je suis actuellement un étudiant en <strong class="text-purple-500">2ème année de BUT Métier du Multimédia et de l'Internet avec la spécialité design</strong> à Montbéliard.</p>
           <p class="font-unbounded mb-10">Je suis spécialisé dans le domaine du design et plus précisément sur l'UI Design, la création d'affiche, de logo et de tout ce qui est lié à la <strong class="text-cyan-400">création graphique d'une marque. </strong> </p>
           <p class="font-unbounded mb-10"> A côté du design, j'ai appris à créer des sites internet, à gérer des réseaux sociaux pour une entreprise par exemple mais également à concevoir de a à z une stratégie marketing afin qu'une entreprise puisse avoir les ressources numériques nécessaires afin de débuter.</p>
@@ -165,9 +165,12 @@
 
 
 
-<div class=" flex text-center justify-center -mt-20 ">
+<div class=" hidden sm:flex sm:text-center sm:justify-center xl:-mt-40">
         <a href="src/assets/cv.pdf"  download="cv_Bryan_Ferry.pdf"> 
-  <div class="letter-image">
+
+
+
+  <div  class="  letter-image">
   <div class="animated-mail">
     <div class="back-fold"></div>
     <div class="letter">
@@ -184,6 +187,8 @@
   </div>
   <div class="shadow"></div>
 </div>
+
+
 </a>
 </div>
 
@@ -202,11 +207,14 @@
         
         <div class=" absolute w-36 h-36 sm:w-96 sm:h-96 block bg-gradient-to-t from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-30"></div>
       </div>
+      
       </div>
+      
     </div>
-
+    
     <div>
-      <div id="contact" class="text-center  mt-12">
+ 
+      <div id="contact" class="text-center  sm:-mt-20">
         <h2 class="font-syncopate text-2xl sm:text-5xl">Contact</h2>
         <div class="background-image-contact bg-no-repeat sm:pb-32 ">
           <div>
@@ -265,11 +273,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 60vh;
+  
  
   
 
 }
+
+
 .recent_project {
   position: relative;
   width: 1300px;

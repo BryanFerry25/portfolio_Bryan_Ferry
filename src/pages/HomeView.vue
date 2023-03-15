@@ -783,7 +783,7 @@
   font-weight: 700;
   stroke-width: 1;
  
-  animation: textAnimate 7s  alternate;
+  animation: textAnimate 7s infinite alternate;
   
 }
 
@@ -795,7 +795,7 @@
   font-weight: 700;
   stroke-width: 1;
  
-  animation: textAnimate 7s  alternate;
+  animation: textAnimate 7s infinite alternate;
   
 }
 @media only screen and (max-width: 1140px) {
@@ -817,10 +817,12 @@
 @media only screen and (max-width: 768px) {
 .text_svg {
   font-size: 140px;
+  animation: none;
   
 }
 .text_svg2 {
   font-size: 110px;
+  animation: none;
 }
 .recent_project .box {
   

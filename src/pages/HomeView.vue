@@ -818,11 +818,15 @@
 .text_svg {
   font-size: 140px;
   animation: none;
+  stroke: none;
+  fill: white;
   
 }
 .text_svg2 {
   font-size: 110px;
   animation: none;
+  stroke: none;
+  fill: white;
 }
 .recent_project .box {
   

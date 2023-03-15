@@ -819,15 +819,19 @@
   font-size: 140px;
   animation: none;
   stroke: none;
-  fill: white;
+  font-family: "Seaweed Script";
+
+  
+  
   
 }
 .text_svg2 {
   font-size: 110px;
   animation: none;
   stroke: none;
-  fill: white;
+
 }
+
 .recent_project .box {
   
   

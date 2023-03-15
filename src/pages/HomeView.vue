@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <main>
+  <main class="">
     
     <div class="patterns -mt-20 sm:-mt-20 text-center">
   <svg class=" svg_anim" width="100%" height="100%">
@@ -128,14 +128,25 @@
           <listProjet :max="8" />
         </div>
       </div>
-      <div class="w-max m-auto bg-gradient-to-t from-cyan-500 to-purple-500 text-xs sm:text-2xl rounded-3xl p-1">
-        <div class="bg-black-light h-full w-full rounded-3xl px-5 py-6">
-          <RouterLink to="/projets" class="font-unbounded font-regular ">
-            <span> Autres projets</span>
-          </RouterLink>  
-        </div>    
-      </div>
+
     </div>
+
+
+
+    <div class="box_bouton">
+
+<RouterLink to="/projets"  class="button_main">
+  <div class="button__line"></div>
+  <div class="button__line"></div>
+  <span class="button__text">VOIR TOUS</span>
+  <div class="button__drow1"></div>
+  <div class="button__drow2"></div>
+</RouterLink>
+
+</div>
+
+
+
     <div>
       <div id="about" class="text-center sm:text-left sm:ml-20 mt-28 ">
         <h2 class="font-syncopate text-2xl sm:text-5xl text-center">À propos de moi</h2>
@@ -192,16 +203,22 @@
 </a>
 </div>
 
-          <div class="w-max m-auto  rounded-3xl p-1 mb-40">
-            <div class="bg-black-light h-full w-full rounded-3xl px-10 py-5 ">
 
-                
 
-              <a href="src/assets/cv.pdf" class="font-unbounded font-medium" download="cv_Bryan_Ferry.pdf"> 
-                <span class="shadow_blue">Télécharger mon CV </span>
-              </a>
-            </div>    
-          </div>
+  <div class="box_bouton mb-40">
+
+    <a href="src/assets/cv.pdf" class="font-unbounded font-medium button_main" download="cv_Bryan_Ferry.pdf"> 
+  <div class="button__line"></div>
+  <div class="button__line"></div>
+  <span class="button__text">VOIR MON CV</span>
+  <div class="button__drow1"></div>
+  <div class="button__drow2"></div>
+    </a>
+
+</div>
+
+
+
         </div>
         <div class=" flex text-right justify-end">
         
@@ -267,6 +284,236 @@
 
 
 @import 'animate.css';
+
+
+
+.button_main{
+    position : relative ;
+    z-index : 0 ;
+    width : 240px ;
+    height : 56px ;
+    text-decoration : none ;
+    font-size : 14px ; 
+    font-weight : bold ;
+    color : var(--line_color) ;
+    letter-spacing : 2px ;
+    transition : all .3s ease ;
+    font-family: 'Unbounded';
+}
+.button__text{
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    width : 100% ;
+    height : 100% ;
+}
+.button_main::before,
+.button_main::after,
+.button__text::before,
+.button__text::after{
+    content : '' ;
+    position : absolute ;
+    height : 3px ;
+    border-radius : 2px ;
+    background : linear-gradient(to right, #BC2EF5, #54BCFD); 
+    transition : all .5s ease ;
+}
+.button_main::before{
+    top : 0 ;
+    left : 54px ;
+    width : calc( 100% - 56px * 2 - 16px ) ;
+}
+.button_main::after{
+    top : 0 ;
+    right : 54px ;
+    width : 8px ;
+}
+.button__text::before{
+    bottom : 0 ;
+    right : 54px ;
+    width : calc( 100% - 56px * 2 - 16px ) ;
+}
+.button__text::after{
+    bottom : 0 ;
+    left : 54px ;
+    width : 8px ;
+}
+.button__line{
+    position : absolute ;
+    top : 0 ;
+    width : 56px ;
+    height : 100% ;
+    overflow : hidden ;
+}
+.button__line::before{
+    content : '' ;
+    position : absolute ;
+    top : 0 ;
+    width : 150% ;
+    height : 100% ;
+    box-sizing : border-box ;
+    border-radius : 300px ;
+    border : solid 3px white ;
+}
+.button__line:nth-child(1),
+.button__line:nth-child(1)::before{
+    left : 0 ;
+}
+.button__line:nth-child(2),
+.button__line:nth-child(2)::before{
+    right : 0 ;
+}
+.button_main:hover{
+    letter-spacing : 6px ;
+}
+.button_main:hover::before,
+.button_main:hover .button__text::before{
+    width : 8px ;
+}
+.button_main:hover::after,
+.button_main:hover .button__text::after{
+    width : calc( 100% - 56px * 2 - 16px ) ;
+}
+.button__drow1,
+.button__drow2{
+    position : absolute ;
+    z-index : -1 ;
+    border-radius : 16px ;
+    transform-origin : 16px 16px ;
+}
+.button__drow1{
+    top : -16px ;
+    left : 40px ;
+    width : 32px ;
+    height : 0;
+    transform : rotate( 30deg ) ;
+}
+.button__drow2{
+    top : 44px ;
+    left : 77px ;
+    width : 32px ;
+    height : 0 ;
+    transform : rotate(-127deg ) ;
+}
+.button__drow1::before,
+.button__drow1::after,
+.button__drow2::before,
+.button__drow2::after{
+    content : '' ;
+    position : absolute ;
+}
+.button__drow1::before{
+    bottom : 0 ;
+    left : 0 ;
+    width : 0 ;
+    height : 32px ;
+    border-radius : 16px ;
+    transform-origin : 16px 16px ;
+    transform : rotate( -60deg ) ;
+}
+.button__drow1::after{
+    top : -10px ;
+    left : 45px ;
+    width : 0 ;
+    height : 32px ;
+    border-radius : 16px ;
+    transform-origin : 16px 16px ;
+    transform : rotate( 69deg ) ;
+}
+.button__drow2::before{
+    bottom : 0 ;
+    left : 0 ;
+    width : 0 ;
+    height : 32px ;
+    border-radius : 16px ;
+    transform-origin : 16px 16px ;
+    transform : rotate( -146deg ) ;
+}
+.button__drow2::after{
+    bottom : 26px ;
+    left : -40px ;
+    width : 0 ;
+    height : 32px ;
+    border-radius : 16px ;
+    transform-origin : 16px 16px ;
+    transform : rotate( -262deg ) ;
+}
+.button__drow1,
+.button__drow1::before,
+.button__drow1::after,
+.button__drow2,
+.button__drow2::before,
+.button__drow2::after{
+    background : #8D27B6;
+}
+.button_main:hover .button__drow1{
+    animation : drow1 ease-in .06s ;
+    animation-fill-mode : forwards ;
+}
+.button_main:hover .button__drow1::before{
+    animation : drow2 linear .08s .06s ;
+    animation-fill-mode : forwards ;
+}
+.button_main:hover .button__drow1::after{
+    animation : drow3 linear .03s .14s ;
+    animation-fill-mode : forwards ;
+}
+.button_main:hover .button__drow2{
+    animation : drow4 linear .06s .2s ;
+    animation-fill-mode : forwards ;
+}
+.button_main:hover .button__drow2::before{
+    animation : drow3 linear .03s .26s ;
+    animation-fill-mode : forwards ;
+}
+.button_main:hover .button__drow2::after{
+    animation : drow5 linear .06s .32s ;
+    animation-fill-mode : forwards ;
+}
+@keyframes drow1{
+    0%   { height : 0 ; }
+    100% { height : 100px ; }
+}
+@keyframes drow2{
+    0%   { width : 0 ; opacity : 0 ;}
+    10%  { opacity : 0 ;}
+    11%  { opacity : 1 ;}
+    100% { width : 120px ; }
+}
+@keyframes drow3{
+    0%   { width : 0 ; }
+    100% { width : 80px ; }
+}
+@keyframes drow4{
+    0%   { height : 0 ; }
+    100% { height : 120px ; }
+}
+@keyframes drow5{
+    0%   { width : 0 ; }
+    100% { width : 124px ; }
+}
+
+
+
+
+
+
+
+.box_bouton{
+    width : 100% ;
+    height : 300px ;
+    display : flex ;
+    flex-direction : column ;
+    justify-content : center ;
+    align-items : center ;
+}
+
+
+
+
+
+
+
 
 .box_recent{
  

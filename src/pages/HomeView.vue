@@ -783,7 +783,7 @@
   font-weight: 700;
   stroke-width: 1;
  
-  animation: textAnimate 7s infinite alternate;
+  animation: textAnimate 7s  alternate;
   
 }
 
@@ -795,7 +795,7 @@
   font-weight: 700;
   stroke-width: 1;
  
-  animation: textAnimate 7s infinite alternate;
+  animation: textAnimate 7s  alternate;
   
 }
 @media only screen and (max-width: 1140px) {

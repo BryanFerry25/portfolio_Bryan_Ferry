@@ -25,7 +25,7 @@ const menuOuvert = ref(false)
               <li><RouterLink to="/connexion">Compte</RouterLink></li>
               <li><RouterLink to="/newprojet">Ajout de projet</RouterLink></li>
               <li><RouterLink to="/newlogiciel">Ajout de logiciel </RouterLink></li>
-              <li><RouterLink to="/logiciels">Modification de logiciel </RouterLink></li>
+              
             </ul>
         </div>
         <div class=" hidden sm:flex items-center ml-5 mr-5 gap-6">

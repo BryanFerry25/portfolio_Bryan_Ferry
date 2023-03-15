@@ -59,7 +59,7 @@ async function supprimerOffre(dataForm) {
         type="form" 
         :config="{ classes:{input:'text-black', actions: 'justify-self-end', form: '$reset grid grid-cols-1 gap-2', }}"
         :submit-attrs="{
-        inputClass: 'rounded-md shadow-sm focus-style p-5 bg-blue-300 ',
+        inputClass: 'mr-[190px] rounded-md shadow-sm focus-style p-5 bg-blue-300 mt-10 ',
         wrapperClass: '',
         outerClass: '',
       }"

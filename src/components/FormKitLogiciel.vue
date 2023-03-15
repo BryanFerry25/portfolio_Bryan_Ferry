@@ -41,12 +41,14 @@ async function supprimerLogiciel(dataForm) {
 </script>
 
 <template>
-     <FormKit
+  <div class=" text-center">
+     <FormKit 
+     
         id="form"
         type="form" 
         :config="{ classes:{input:'text-black', actions: 'justify-self-end', form: '$reset grid grid-cols-1 gap-2', }}"
         :submit-attrs="{
-        inputClass: 'rounded-md shadow-sm focus-style p-2 bg-blue-300 ',
+        inputClass: 'mr-[690px] rounded-md shadow-sm focus-style p-2 bg-blue-300 ',
         wrapperClass: '',
         outerClass: '',
       }"
@@ -56,12 +58,15 @@ async function supprimerLogiciel(dataForm) {
         <FormKit type="hidden" name="Code_Logiciel" />
         <FormKit name="libelle" label="Nom du logiciel"/>
         <FormKit :type="imgUploadSupabase" name="logo" label="Logo du logiciel"/>
+        <div class=" text-center">
         <button
         type="button"
         @click="$formkit.reset('form')"
         class="rounded-md shadow-sm focus-style p-2 bg-green-300 justify-self-end">
         Reset
         </button>
+      </div>
+        <div class=" text-center py-9">
         <button
         v-if="offre"
         type="button"
@@ -69,5 +74,7 @@ async function supprimerLogiciel(dataForm) {
         class="rounded-md shadow-sm focus-style p-2 bg-red-500 justify-self-end">
         Supprimer le logiciel
         </button>
+      </div>
     </FormKit>
+  </div>
 </template>

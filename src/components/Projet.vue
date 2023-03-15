@@ -39,9 +39,9 @@ defineProps({
         <div class=" flex flex-wrap gap-5 justify-center">
             
             <ImgS class=" w-16 xs:w-20 md:w-24 lg:w-36" v-if="logiciel1" bucket="prive-images-logiciels" :name="logiciel1" />
-            <ImgS class=" w-16" v-if="logiciel2" bucket="prive-images-logiciels" :name="logiciel2" />
-            <ImgS class=" w-16" v-if="logiciel3" bucket="prive-images-logiciels" :name="logiciel3" />
-            <ImgS class=" w-16" v-if="logiciel4" bucket="prive-images-logiciels" :name="logiciel4" />
+            <ImgS class=" w-16 xs:w-20 md:w-24 lg:w-36 " v-if="logiciel2" bucket="prive-images-logiciels" :name="logiciel2" />
+            <ImgS class=" w-16 xs:w-20 md:w-24 lg:w-36" v-if="logiciel3" bucket="prive-images-logiciels" :name="logiciel3" />
+            <ImgS class=" w-16 xs:w-20 md:w-24 lg:w-36" v-if="logiciel4" bucket="prive-images-logiciels" :name="logiciel4" />
         </div>
     </div>
     <div>

@@ -55,15 +55,17 @@ async function ajouterImage(evt) {
       Supprimer l'image
     </button>
   </div>
-  <div v-else>
+  <div v-else >
     <form @submit.prevent="ajouterImage">
       <input type="file" name="fichier" />
+      <div class=" text-center">
       <button
         type="submit"
-        class="bg-green-500 rounded-lg p-2 mt-2 ml-auto block"
+        class="bg-green-500 rounded-lg p-4 mt-2 ml-auto mr-auto block text-center  mt-8 mb-9"
       >
         Ajouter l'image
       </button>
+      </div>
     </form>
   </div>
 </template>

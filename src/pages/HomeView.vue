@@ -64,6 +64,7 @@
     <div class="imgBx">
       <img src="@/assets/sprite.webp">
     </div>
+    <RouterLink to="/projets" >
     <div class="content">
       <div>
         <h2 class=" font-syncopate title_recent">Affiche Sprite</h2>
@@ -71,11 +72,13 @@
         </p>
       </div>
     </div>
+  </RouterLink>
   </div>
   <div class="box shadow_pink2">
     <div class="imgBx">
       <img src="@/assets/monster.webp">
     </div>
+    <RouterLink to="/projets" >
     <div class="content">
       <div>
         <h2 class=" font-syncopate title_recent">Monster Energy</h2>
@@ -83,19 +86,22 @@
         </p>
       </div>
     </div>
+  </RouterLink>
   </div>
   <a href="http://127.0.0.1:5173/projets/projet/Monster%20Energy">
   <div class="box shadow_blue2">
     <div class="imgBx">
-      <img src="@/assets/michael.webp">
+      <img src="@/assets/brain.webp">
     </div>
+    <RouterLink to="/projets" >
     <div class="content">
       <div>
-        <h2 class=" font-syncopate title_recent">Michael Scofield</h2>
-        <p class=" font-unbounded title_recent">Affiche pouvant servir de présentation pour l'acteur principal de la série Prison Break
+        <h2 class=" font-syncopate title_recent">BRAIN</h2>
+        <p class=" font-unbounded title_recent">Affiche moderne qui peut-être utilisé lors d'une conférence sur le cerveau
         </p>
       </div>
     </div>
+  </RouterLink>
   </div>
 </a>
 </div>
@@ -125,7 +131,7 @@
 
 
 
-          <listProjet :max="8" />
+          <listProjet :max="6" />
         </div>
       </div>
 

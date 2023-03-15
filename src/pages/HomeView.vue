@@ -14,7 +14,7 @@
  </text>
  </svg>
 </div>
-<div class="patterns mobile_ajust -mt-72 sm:-mt-56 lg:-mt-48 text-center -mb-28">
+<div class="patterns mobile_ajust -mt-80 sm:-mt-56 lg:-mt-48 text-center -mb-28">
   <svg class=" svg_anim" width="100%" height="100%">
  <text class="text_svg2 text-7xl sm:text-9xl lg:text-[160px]" x="58%" y="60%"  text-anchor="middle"  >
    Ferry
@@ -820,6 +820,7 @@
   animation: none;
   stroke: none;
   font-family: "Seaweed Script";
+  fill: white;
 
   
   
@@ -829,6 +830,8 @@
   font-size: 110px;
   animation: none;
   stroke: none;
+  fill: white;
+  
 
 }
 

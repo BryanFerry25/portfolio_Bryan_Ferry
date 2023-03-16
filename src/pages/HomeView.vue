@@ -183,7 +183,7 @@
 
 
 <div class=" hidden sm:flex sm:text-center sm:justify-center xl:-mt-40">
-        <a href="src/assets/cv.pdf"  download="cv_Bryan_Ferry.pdf"> 
+        <a href="src/assets/cv.pdf"  download="cv.pdf"> 
 
 
 
@@ -213,7 +213,7 @@
 
   <div class="box_bouton mb-40">
 
-    <a href="src/assets/cv.pdf" class="font-unbounded font-medium button_main" download="cv_Bryan_Ferry.pdf"> 
+    <a href="src/assets/cv.pdf" class="font-unbounded font-medium button_main" download="cv.pdf"> 
   <div class="button__line"></div>
   <div class="button__line"></div>
   <span class="button__text">VOIR MON CV</span>
